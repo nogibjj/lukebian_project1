@@ -11,5 +11,19 @@ Also this project need four secrests to connect our Databrick cluster.
   DATABRICKS_HTTP_PATH
   DATABRICKS_SERVER_HOSTNAME
   DATABRICKS_TOKEN
+```
+
+## Test out CLI
+
+```
+databricks clusters list --output JSON | jq
+databricks fs ls dbfs:/
+databricks jobs list --output JSON | jq
+
+```
+## Launch fast api
+
+```
+python fastapi-app.py
 
 ```
